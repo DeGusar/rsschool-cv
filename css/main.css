@@ -1,0 +1,117 @@
+
+html {
+    font-family: Roboto, sans-serif;
+    --primary-color: #2f80ed;
+    --secondary-color: #333333;
+}
+
+* {
+    color: var(--secondary-color);
+  
+}
+
+header {
+    
+ position: relative;
+ margin-bottom: 3em;
+ 
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 900px;
+}
+
+h1, h2 {
+    color: var(--primary-color);
+    margin-bottom: 0.25em;
+}
+
+header h2 {
+    color: var(--secondary-color);
+    font-size: 1em;
+    margin-top: 0;
+    margin-bottom: 2em;
+    
+}
+
+header a {
+    color: var(--secondary-color);
+    text-decoration: none;
+   display: flex;
+
+}
+
+.header__contacts {
+    display: flex;
+    margin-bottom: 2em;
+}
+
+.photo {
+    position: absolute;
+    top: 0;
+    right: 0;
+   
+}
+
+.contacts__logo {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+ 
+}
+
+header ul {
+    line-height: 2;
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header li {
+    display: flex;
+    align-items: center;
+  
+}
+
+footer {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    min-height: 100px;
+    align-items: center;
+}
+
+footer a {
+    color: var(--secondary-color);
+    text-decoration: none;
+     display: flex;
+}
+ .logo__footer {
+    display: flex;
+    align-items: center;
+ }
+
+.logo__footer img {
+    width: 70px;
+   
+}
+.link__github {
+    display: flex;
+   
+}
+
+.year {
+    color: var(--secondary-color);
+    font-weight: 800;
+    font-size: 20px;
+}
+
+section {
+    margin-bottom: 1em;
+}
+
+main {
+    margin-bottom: 3em;
+}
