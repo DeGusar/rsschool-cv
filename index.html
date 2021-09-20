@@ -5,94 +5,191 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/dracula.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
     <title>CV</title>
 </head>
 <body>
-<div class="wrapper">
-    <header>
-        <h1>Denis Gusar</h1>
-        <h2 >Web developer</h2>
-        <div class="header__contacts">
-            <nav>
-                <ul>
-                    <li class="contacts_list">
-                       <img class="contacts__logo" src="./images/github.svg" alt="Github logo"><a class="github__logo" href="https://github.com/DeGusar">github.com/DeGusar</a>
-                    </li>
-                    <li class="contacts_list">
-                       <img class="contacts__logo" src="./images/telegram.svg" alt="Telegram logo"><a class="telegram__logo" href="https://t.me/degusar">https://t.me/degusar</a>
-                    </li>
-                    <li class="contacts_list">
-                     <img class="contacts__logo" src="./images/skype.png" alt="Skype logo"><a class="phone__logo" href="skype:live:1f5cfa72bc5f0d05?chat">+375 (29) 823-79-65</a>
-                  </li>
-                    <li class="contacts_list">
-                       <img class="contacts__logo" src="./images/gmail.png" alt="Mail logo"><a class="phone__logo" href="mailto:degusar.wot@gmail.com">degusar.wot@gmail.com</a>
-                    </li>
-                </ul>
-            </nav>
+        <div class="wrapper__header">
+            <header>
            
-            
+                <nav>
+                        <div class="toggle">
+                       <i class="fas fa-bars"></i>
+                   </div>
+                   <ul class="mainMenu">
+                       <li><a href="#contacts">Contacts</a></li>
+                       <li><a href="#skills">Skills</a></li>
+                       <li><a href="#about">About</a></li>
+                       <li><a href="#code__example">Code Example</a></li>
+                       <li><a href="#projects">Projects</a></li>
+                       <li><a href="#education">Education</a></li>
+                       <li><i class="fas fa-times closeMenu"></i></li>
+                       
+               </ul>
+               </nav>
+            </header>
         </div>
-        <div class="photo">
-            <img src="./images/photo.jpg" alt="Photo" >   
-        </div>
-    </header>
-</div>
-<div class="wrapper">
-    <main>
-        <section> <h2>About me</h2>
-            <p>I haven't had experience in <strong>Web development</strong> yet , but i have great desire to learn it, so i spend all free time after job to study.This sphere is very interesting for me, and i'll try to get maximum from this courses.</p>
-        </section>
-        <section>
-            <h2>Skills</h2>
-            <ul class="skills__list">
-                <li>Html</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Git</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Code example</h2>
-        <pre>
-            function isPalindrome(line) {
-                if (typeof line == 'string'){
-                   return line === line.split("").reverse().join("");
-                } else if (typeof line == 'number' ){
-                  return  line.toString() === line.toString().split("").reverse().join("");
-                };
-
-                }
-        </pre>
-        </section>
-        <section>
-            <h2>Language</h2>
-            <p>Pre-Intermediate (A2) </p>
-        </section>
-        <section>
-            <h2>Education</h2>
-            <p>Brest State Technical University</p>
-            <p>Student</p>
-        </section>
-       
-    </main>
-</div>
-    <div class="wrapper">
-        <footer>
-            <div class="link__github">
-                <img class="contacts__logo" src="./images/github.svg" alt="Github"><a class="github__logo" href="https://github.com/DeGusar">github.com/DeGusar</a>
-            </div>
-            <div class="year">
-                <p>2021</p>
-            </div>
-            <div class="logo__footer">
-                <a href="https://rs.school/js/"><img src="./images/rs_school_logo.svg" alt="Rolling Scope Logo"></a>
+        
+        <main class="main__content">
+            <section class="left">
+                <div class="left__content">
+                    <div class="profile">
+                        <img src="./images/photo.jpg" alt="Photo" >
+                        <h1 class="name">Denis Gusar</h1>
+                        <p class="developer">Web developer</p>
+                    </div>
+                    <div class="contacts" id="contacts">
+                        <h3 class="main__title">Contacts info</h3>
+                        <ul>
+                            <li class="contacts_list">
+                               <img class="contacts__logo" src="./images/github.png" alt="Github logo"><a class="github__logo" href="https://github.com/DeGusar" target="_blank">github.com/DeGusar</a>
+                            </li>
+                            <li class="contacts_list">
+                               <img class="contacts__logo" src="./images/telegram.svg" alt="Telegram logo"><a class="telegram__logo" href="https://t.me/degusar">https://t.me/degusar</a>
+                            </li>
+                            <li class="contacts_list">
+                             <img class="contacts__logo" src="./images/skype.png" alt="Skype logo"><a class="phone__logo" href="skype:live:1f5cfa72bc5f0d05?chat">+375 (29) 823-79-65</a>
+                          </li>
+                            <li class="contacts_list">
+                               <img class="contacts__logo" src="./images/gmail.png" alt="Mail logo"><a class="phone__logo" href="mailto:degusar.wot@gmail.com">degusar.wot@gmail.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="skills" id="skills">
+                        <h3 class="main__title">Skills</h3>
+                        <ul>
+                            <li>
+                                <h5 class="skills__title">JavaScript</h5>
+                                <div class="progress__bar">
+                                    <div class="progress js__progress"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <h5 class="skills__title">html</h5>
+                                <div class="progress__bar">
+                                    <div class="progress html__progress"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <h5 class="skills__title">css</h5>
+                                <div class="progress__bar">
+                                    <div class="progress css__progress"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <h5 class="skills__title">git</h5>
+                                <div class="progress__bar">
+                                    <div class="progress git__progress"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="right">
+                <div class="right__content">
+                    <h2 class="right__title  title__about" id="about">About me</h2>
+                    <p class="about">I haven't had experience in Web development yet , but i have great desire to learn it, so i spend all free time after job to study.This sphere is very interesting for me, and i'll try to get maximum from this courses.</p>
+                    <section class="code" id="code__example">
+                        <h2 class="right__title title__code">Code Example</h2>
+                        <pre class="code__example"><code class="javascript">
+    const mainMenu = document.querySelector('.mainMenu');
+    const closeMenu = document.querySelector('.closeMenu');
+    const toggle = document.querySelector('.toggle');
+                            
+    toggle.addEventListener('click', show);
+    closeMenu.addEventListener('click', close);
+                            
+    function show() {
+        mainMenu.style.display = 'flex';
+        mainMenu.style.top = '0';
+    }
+                            
+    function close() {
+        mainMenu.style.top = '-100%'
+                               
+    }
+                           }</code></pre>
+                    </section>
+                    <section class="projects" id="projects">
+                        <h2 class="right__title  title__projects">projects</h2>
+                        <div class="layout__projects">
+                            <div class="project__item">
+                                <a href="https://rolling-scopes-school.github.io/degusar-JSFEPRESCHOOL/museum/" target="_blank" class="museum__card" > 
+                                   <div class="card__content">
+                                    <h4 class="card-title">Museum</h4>
+                                    <p class="visiting__bigtext">HTML, CSS, SASS </p>
+                                    
+                                   </div>
+                                    
+                                </a>
+                            </div>
+                            
+                        </div>
+                        <div class="layout__projects">
+                            <div class="project__item">
+                                <a href="https://rolling-scopes-school.github.io/degusar-JSFEPRESCHOOL/vertical-slider//" target="_blank" class="slider__card" > 
+                                   <div class="card__content">
+                                    <h4 class="card-title">Vertical Slider</h4>
+                                    <p class="visiting__bigtext">HTML, CSS, JavaScript </p>
+                                    
+                                   </div>
+                                    
+                                </a>
+                            </div>
+                            
+                        </div>
+                    </section>
+                    <section class="education" id="education">
+                        <h2 class="right__title  title__education">Education and courses</h2>
+                       <div class="education__item">
+                           <p class="educ__year">2021</p>
+                           <p class="status">In progress</p>
+                           <p class="educ__title">Javascript/Front-End Program</p>
+                           <p class="place">Rolling Scopes School</p>
+                       </div>
+                       
+                        <div class="education__item">
+                            <p class="educ__year">2021</p>
+                            <p class="status"><a href="https://app.rs.school/certificate/zijsbkp9" target="_blank">Certificate</a></p>
+                            <p class="educ__title">JS/FE Pre-School</p>
+                            <p class="place">Rolling Scopes School</p>
+                        </div>
+                    </section>
+                    <section class="language">
+                        <h2 class="right__title  title__language">Language</h2>
+                        <p class="english">English: Pre-Intermediate</p>
+                        
+                    </section>
+                </div>
+            </section>
+        </main>
+            <div class="wrapper__footer">
+                <footer>
+                    <div class="link__github">
+                        <img class="contacts__logo" src="./images/github.svg" alt="Github"><a class="github__logo" href="https://github.com/DeGusar" target="_blank">github.com/DeGusar</a>
+                    </div>
+                    <div class="year">
+                        <p>2021</p>
+                    </div>
+                   
+                    
+            
+                </footer>
             </div>
             
+        
     
-        </footer>
-    </div>
     
 
-   
+    
+
+    
+
+   <script src="./app.js"></script>
 </body>
 </html>
