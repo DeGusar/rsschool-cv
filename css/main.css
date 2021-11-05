@@ -15,7 +15,7 @@ body {
     
 }
 
-/* header  start!!*/
+
 
 header {
     background: #000;
@@ -71,11 +71,7 @@ nav .mainMenu .closeMenu {
     display: none;
 }
 
-/* header end!! */
 
-/* main-content start!! */
-
-/* contacts begin */
 .main__content {
     min-height: 100vh;
     width: 80%;
@@ -149,9 +145,7 @@ nav .mainMenu .closeMenu {
     background-color: #f7f7f7;
    
 }
-/* contacts end!! */
 
-/* skills begin */
 .skills ul {
     padding-top: 1rem;
 }
@@ -197,9 +191,7 @@ nav .mainMenu .closeMenu {
     font-size: 1rem;
    
 }
-/* skills end!! */
 
-/* right-content begin */
 .right__content {
     padding: 2rem 3rem;
 }
@@ -225,8 +217,7 @@ transform: translateY(-50%);
     line-height: 1.5rem;
     font-size: 1.1rem;
 }
- /* about end!! */
-/*  code example begin */
+
 .title__code {
     margin-top: 3rem;
 }
@@ -247,9 +238,6 @@ transform: translateY(-50%);
     
 }
 
-/*  code example end! */
-
-/* projects begin */
 .layout__projects {
     margin-top: 2rem;
    
@@ -302,9 +290,7 @@ transform: translateY(-50%);
     text-decoration: none;
     text-transform: uppercase;
 }
-/* projects end!! */
 
-/* education start */
 .title__education {
     margin-top: 2rem;
 }
@@ -334,9 +320,7 @@ transform: translateY(-50%);
 .education__item p a {
     color: black;
 }
-/* education end!! */
 
-/* language start */
 .title__language{
     margin-top: 2rem;
 }
@@ -353,11 +337,7 @@ transform: translateY(-50%);
 .english {
     margin:2rem 0;
 }
-/* language end */
 
-/* right-content end!! */
-
-/* main-content END!! */
 
 .wrapper__footer {
     width: 80%;
