@@ -94,6 +94,10 @@ nav .mainMenu .closeMenu {
   align-items: center;
   width: 100%;
 }
+.profile img {
+  width: 150px;
+  height: 185px;
+}
 
 .name {
   padding-top: 0.5rem;
